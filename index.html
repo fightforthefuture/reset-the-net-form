@@ -1,20 +1,91 @@
 <html>
 <head>
-    <title>Reset the Net Form</title>
+<title>Reset the Net Form</title>
 
-    <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="bower/bootstrap/dist/css/bootstrap.min.css">
+<!-- Styles -->
+<link rel="stylesheet" type="text/css" href="bower/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
-<h1>Reset the Net Form</h1>
+<div class="container">
 
-<input placeholder="Your email">
+<h1><strong>Reset</strong> <em>the</em> <strong>Net</strong> Form</h1>
 
-<button class="btn" data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover" data-title="Email" data-content="We use your email to contact you, if there are any issues with your submission.">?</button>
+<p>
+Sign your site or project up here. Apologies for the Bootstrappiness of the form-- we're working on a rails app now.
+</p>
+
+<form>
+
+<div>
+<label for="url">Your website's URL</label>
+<br>
+<input required id="url" name="url" type="url" placeholder="you@domain.tld">
+</div>
+
+<div>
+<label for="image">A link to your logo (220x150 pixels, please)</label>
+<br>
+<input required id="image" name="image" type="url" placeholder="https://imgur.com/...">
+</div>
+
+<div>
+<label for="description">What will you do to participate?</label>
+<p>
+Tell us who you are, and one step you'll take to protect the privacy of your users. Or, if your entire app or service is about user privacy, just tell us what you do. Use complete sentences, and make sure the first word is your company name (e.g. "PrivacystartupX is building a new...") since that word will be bolded. Please keep this to 150 characters tops and use the third person. If you aren't sure what you're doing yet, it's fine to say "On March 27, they'll announce new privacy features."
+</p>
+<textarea required id="description" name="description" placeholder="We plan to..."></textarea>
+</div>
+
+<div>
+<label for="email">Your contact email</label> <a class="help btn" data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover" data-title="Why do you need my email?" data-content="We use your email to contact you, if there are any issues with your submission." href="#">?</a>
+<br>
+<input required id="email" name="email" type="email" placeholder="you@domain">
+</div>
+
+<div>
+<label for="things">What kind of thing do you make? (check as many as apply)</label>
+<br>
+<label><input type="checkbox"> A website (blog, news site, etc)</label><br>
+<label><input type="checkbox"> A web app</label><br>
+<label><input type="checkbox"> Mobile apps</label><br>
+<label><input type="checkbox"> Software that's explicitly about privacy</label><br>
+<label><input type="checkbox"> Software that people use to communicate directly (messaging, voice, video, etc)</label>
+</div>
+
+<div>
+<label for="donation">Could you make a donation to back this campaign?</label>
+<p>
+Organizations that back this campaign will get special recognition on the site. Donation tiers are $200, $500, $1000, and $5000. Interested? Let us know and we'll be in touch with more info.
+</p>
+<label>
+<input id="donation" name="donation" type="radio"> Yes, we might be able to do that.
+</label>
+
+<br>
+
+<label><input id="donation" name="donation" type="radio"> Oh, totally.</label>
+
+<br>
+
+<label><input id="donation" name="donation" type="radio"> Intrigued, tell me more.</label>
+</div>
+
+<br>
+
+<button class="btn btn-success">Done!</button>
+</form>
+
+<br>
+<br>
+<br>
+
+</div> <!-- End of .container -->
 
 <!-- Scripts -->
 <script type="text/javascript" src="bower/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="bower/jquery.validation/jquery.validate.js"></script>
 <script type="text/javascript" src="bower/bootstrap/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/test.js"></script>
 
