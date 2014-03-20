@@ -16,7 +16,7 @@
 Sign your site or project up here. We're excited to see your how you're helping secure the web.
 </p>
 
-<form>
+<form action="https://reset-the-net-form-backend.herokuapp.com/save" method="post">
 
 <div>
 <label for="url">Your website's URL</label>
@@ -46,12 +46,26 @@ Tell us who you are, and one step you'll take to protect the privacy of your use
 
 <div>
 <label for="things">What kind of thing do you make? (check as many as apply)</label>
+
 <br>
-<label><input type="checkbox"> A website (blog, news site, etc)</label><br>
-<label><input type="checkbox"> A web app</label><br>
-<label><input type="checkbox"> Mobile apps</label><br>
-<label><input type="checkbox"> Software that's explicitly about privacy</label><br>
-<label><input type="checkbox"> Software that people use to communicate directly (messaging, voice, video, etc)</label>
+
+<label><input type="checkbox" name="things" value="website"> A website (blog, news site, etc)</label>
+
+<br>
+
+<label><input type="checkbox" name="things" value="webapp"> A web app</label>
+
+<br>
+
+<label><input type="checkbox" name="things" value="mobile"> Mobile apps</label>
+
+<br>
+
+<label><input type="checkbox" name="things" value="privacy"> Software that's explicitly about privacy</label>
+
+<br>
+
+<label><input type="checkbox" name="things" value="communication"> Software that people use to communicate directly (messaging, voice, video, etc)</label>
 </div>
 
 <div>
@@ -60,16 +74,16 @@ Tell us who you are, and one step you'll take to protect the privacy of your use
 Organizations that back this campaign will get special recognition on the site. Donation tiers are $200, $500, $1000, and $5000. Interested? Let us know and we'll be in touch with more info.
 </p>
 <label>
-<input id="donation" name="donation" type="radio"> Yes, we might be able to do that.
+<input id="donation" name="donation" type="radio" value="might"> Yes, we might be able to do that.
 </label>
 
 <br>
 
-<label><input id="donation" name="donation" type="radio"> Oh, totally.</label>
+<label><input id="donation" name="donation" type="radio" value="totally"> Oh, totally.</label>
 
 <br>
 
-<label><input id="donation" name="donation" type="radio"> Intrigued, tell me more.</label>
+<label><input id="donation" name="donation" type="radio" value="intrigued"> Intrigued, tell me more.</label>
 </div>
 
 <br>
