@@ -49,9 +49,8 @@ function updateTextPreview() {
 }
 
 // Update text preview.
-$('#description, #name').on('change keyup', function(e) {
-    updateTextPreview();
-});
+updateTextPreview();
+$('#description, #name').on('change keyup', updateTextPreview);
 
 
 })(); // :)
