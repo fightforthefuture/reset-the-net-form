@@ -89,7 +89,7 @@ form textarea:focus {
     color: #70777a;
     font-size: 13px;
     line-height: 20px;
-    font-weight: 600;
+    font-weight: bold;
     margin-top: 12px;
     width: 200px;
 }
