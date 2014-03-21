@@ -13,7 +13,7 @@ $('form').on('submit', function(e) {
     }
 });
 
-// Show Image Preview.
+// Show image preview.
 $('#image').on('change', showPreview);
 function showPreview() {
     if (this.files && this.files[0]) {
@@ -41,6 +41,17 @@ function showPreview() {
 }
 showPreview.apply($('#image')[0]);
 
+function updateTextPreview() {
+    var name = $('#name').val() || 'MyName';
+    var description = $('#description').val() || 'is doing something courageous and awesome with crypto.';
+    $('#preview strong').text(name);
+    $('#preview span').text(description);
+}
+
+// Update text preview.
+$('#description, #name').on('change keyup', function(e) {
+    updateTextPreview();
+});
 
 
 })(); // :)
