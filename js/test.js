@@ -1,4 +1,8 @@
-$('.help').popover();
+(function() { // :)
+
+
+
+// Validate Form.
 $('form').on('submit', function(e) {
     $('form').validate();
 
@@ -8,3 +12,7 @@ $('form').on('submit', function(e) {
         e.preventDefault();
     }
 });
+
+
+
+})(); // :)
