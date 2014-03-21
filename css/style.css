@@ -21,3 +21,8 @@ form textarea:focus {
     border: 1px solid #56B4EF;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) inset, 0 0 8px rgba(82, 168, 236, 0.6);
 }
+
+#preview img {
+    background-color: #09c;
+    border-radius: 3px;
+}
