@@ -3,15 +3,29 @@ label.error {
     padding-left: 12px;
 }
 
-form > .container > div {
-    margin: 24px auto;
-    width: 222px;
+form > .container {
+    margin: 0 auto;
+    max-width: 510px;
+}
+
+form > .container > .fields {
+    float: right;
+}
+
+form > .container > .fields > div {
+    margin-bottom: 12px;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
 }
 
-form > .container > div > button {
+form > .container > .button {
+    clear: both;
+    margin: 0 auto;
+    width: 220px;
+}
+
+form > .container > .button > button {
     background: #3091dd;
     background-image: -moz-linear-gradient(top, #3091dd 0%, #2779d6 100%);
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3091dd), color-stop(100%,#2779d6));
@@ -26,14 +40,14 @@ form > .container > div > button {
     font-weight: bold;
     font-size: 15px;
     height: 40px;
+    margin-top: 12px;
     width: 220px;
-    margin: 0 auto;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
 }
 
-form > .container > div > button:hover {
+form > .container > .button > button:hover {
     color: white;
 
     box-shadow: 1px 1px 3px rgba(0,0,0,0.3) inset;
@@ -44,14 +58,18 @@ form input,
 form textarea {
     border: 1px solid #bebebe;
     border-radius: 1px;
-    padding: 16px 16px 14px;
+    padding: 14px 16px 12px;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 12px;
     box-shadow: 0 2px 1px rgba(0,0,0,0.1) inset, 0 1px 0 #FFFFFF;
     width: 222px;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
+}
+
+form textarea {
+    height: 80px;
 }
 
 form input:focus,
@@ -64,7 +82,8 @@ form textarea:focus {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0,0,0,0.3);
-    height: 245px;
+    float: left;
+    height: 247px;
     width: 220px;
     padding: 10px;
     -webkit-box-sizing: border-box;
@@ -119,7 +138,7 @@ body > section > .container > p {
 /* Form */
 body > section > form {
     background-color: #eaeaea;
-    padding: 0 24px 12px;
+    padding: 0 0 12px;
     margin: 0;
 }
 body > section > form > .arrow {
@@ -162,4 +181,16 @@ section > fieldset > legend > h2 {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
+}
+
+@media screen and (max-width: 510px) {
+    #preview {
+        float: none;
+        margin: 0 auto;
+    }
+    form > .container > .fields {
+        float: none;
+        margin: 0 auto;
+        width: 222px;
+    }
 }
