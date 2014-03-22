@@ -47,8 +47,6 @@ function updateTextPreview() {
     $('#preview .card strong').text(name);
     $('#preview .card span').text(description);
     $('form .characters span').text(90 - $('#description').val().length);
-
-    console.log($('form .characters span')); // TODO: Remove this debug code.
 }
 
 // Update text preview.
