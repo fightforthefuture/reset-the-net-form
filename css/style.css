@@ -19,6 +19,16 @@ form > .container > .fields > div {
             box-sizing: border-box;
 }
 
+form > .container > .fields > div > .characters {
+    color: #a5a5a5;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 4px;
+    margin-right: 4px;
+    text-align: right;
+}
+
 form > .container > .button {
     clear: both;
     margin: 0 auto;
@@ -40,7 +50,7 @@ form > .container > .button > button {
     font-weight: bold;
     font-size: 15px;
     height: 40px;
-    margin-top: 12px;
+    margin-top: 28px;
     width: 220px;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
@@ -79,10 +89,13 @@ form textarea:focus {
 }
 
 #preview {
+    float: left;
+}
+
+#preview .card {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0,0,0,0.3);
-    float: left;
     height: 247px;
     width: 220px;
     padding: 10px;
@@ -91,7 +104,7 @@ form textarea:focus {
             box-sizing: border-box;
 }
 
-#preview img {
+#preview .card img {
     border-radius: 3px;
     box-shadow: 0 0 3px rgba(0,0,0,0.3);
     border: 1px solid rgba(0,0,0,0.3);
@@ -100,11 +113,11 @@ form textarea:focus {
     height: 120px;
 }
 
-#preview #image {
+#preview .card #image {
     display: none;
 }
 
-#preview p {
+#preview .card p {
     color: #70777a;
     font-size: 13px;
     line-height: 20px;
@@ -113,8 +126,31 @@ form textarea:focus {
     width: 200px;
 }
 
-#preview p strong {
+#preview .card p strong {
     color: #606668;
+}
+
+#preview .preview-label {
+    color: #09c;
+}
+
+#preview .preview-label .arrow {
+    background-image: url(../images/preview-arrow.png);
+    height: 8px;
+    margin: 14px auto 0;
+    width: 117px;
+}
+
+#preview .preview-label .text {
+    color: #2b85d9;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 4px;
+}
+
+.clear {
+    clear: both;
 }
 
 /* Blue Background */
@@ -186,6 +222,9 @@ section > fieldset > legend > h2 {
 @media screen and (max-width: 510px) {
     #preview {
         float: none;
+        margin: 0 auto;
+    }
+    #preview .card {
         margin: 0 auto;
     }
     form > .container > .fields {

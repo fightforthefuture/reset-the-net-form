@@ -47,11 +47,13 @@ Companies, organizations, software projects, websites, mobile apps, and individu
 </div>
 
 <div>
-<textarea required id="description" name="description" type="text" placeholder="What will you do?" maxlength="100"></textarea>
+<textarea required id="description" name="description" type="text" placeholder="What will you do?" maxlength="90"></textarea>
+<div class="characters"><span>100</span> chars left</div>
 </div>
 </div> <!-- End .fields -->
 
 <div id="preview">
+<div class="card">
 <label>
 <img src="images/upload.png">
 <input id="image" name="image" type="file">
@@ -61,9 +63,15 @@ Companies, organizations, software projects, websites, mobile apps, and individu
 </p>
 </div>
 
+<div class="preview-label">
+<div class="arrow"></div>
+<div class="text">PREVIEW</div>
+</div>
+</div>
+
 <div class="button">
 <button class="btn">SUBMIT</button>
-</div>
+</div> <!-- End .preview -->
 
 <br>
 

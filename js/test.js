@@ -44,8 +44,11 @@ showPreview.apply($('#image')[0]);
 function updateTextPreview() {
     var name = $('#name').val() || 'MyName';
     var description = $('#description').val() || 'is doing something courageous and awesome with crypto.';
-    $('#preview strong').text(name);
-    $('#preview span').text(description);
+    $('#preview .card strong').text(name);
+    $('#preview .card span').text(description);
+    $('form .characters span').text(90 - $('#description').val().length);
+
+    console.log($('form .characters span')); // TODO: Remove this debug code.
 }
 
 // Update text preview.
