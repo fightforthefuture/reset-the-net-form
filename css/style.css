@@ -55,6 +55,9 @@ form > .container > .button > button {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
+            transition: opacity .25s ease-in-out;
+            -moz-transition: opacity .25s ease-in-out;
+            -webkit-transition: opacity .25s ease-in-out;
 }
 
 form > .container > .button > button:hover {
@@ -62,6 +65,7 @@ form > .container > .button > button:hover {
 
     box-shadow: 1px 1px 3px rgba(0,0,0,0.3) inset;
     /*text-shadow: 1px 1px 0 rgba(0,0,0,0.3);*/
+    opacity: 0.8;
 }
 
 form input,
@@ -76,6 +80,9 @@ form textarea {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
+            transition: box-shadow .25s ease-in-out;
+            -moz-transition: box-shadow .25s ease-in-out;
+            -webkit-transition: box-shadow .25s ease-in-out;
 }
 
 form textarea {
@@ -193,6 +200,7 @@ section > fieldset {
     margin-bottom: 24px;
     text-align: center;
     width: 100%;
+    margin-top: 30px;
 }
 section > fieldset > legend {
     border: solid 1px #b5b5b5;
@@ -232,4 +240,14 @@ section > fieldset > legend > h2 {
         margin: 0 auto;
         width: 222px;
     }
+}
+
+.upload{
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+
+.upload:hover{
+	opacity: 0.7;
 }
