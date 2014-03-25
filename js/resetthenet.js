@@ -46,7 +46,18 @@ function updateTextPreview() {
     var description = $('#description').val() || 'is doing something courageous and awesome with crypto.';
     $('#preview .card strong').text(name);
     $('#preview .card span').text(description);
-    $('form .characters span').text(90 - $('#description').val().length);
+
+    var characterMax = 100;
+    var characterCount = $('#name').val().length + $('#description').val().length;
+    var charactersLeft = characterMax - characterCount;
+    if (charactersLeft < 0) {
+        description = description.substring(0, description.length + charactersLeft);
+        $('#preview .card span').text(description);
+        $('#description').val(description);
+        return;
+    }
+
+    $('form .characters span').text(characterMax - characterCount);
 }
 
 // Update text preview.

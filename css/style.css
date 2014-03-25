@@ -130,6 +130,7 @@ form textarea:focus {
     line-height: 20px;
     font-weight: bold;
     margin-top: 12px;
+    overflow: hidden;
     width: 200px;
 }
 
