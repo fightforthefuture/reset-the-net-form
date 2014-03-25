@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Reset the Net: Grid</title>
+
+<!-- Styles -->
+<link rel="stylesheet" type="text/css" href="bower/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/grid.css">
+</head>
+<body>
+
+<section class="container">
+
+<div class="slides"></div>
+
+</section>
+
+<!-- Scripts -->
+<script type="text/javascript" src="bower/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="bower/jquery.validation/jquery.validate.js"></script>
+<script type="text/javascript" src="bower/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="bower/underscore/underscore.js"></script>
+<script type="text/javascript" src="js/grid.js"></script>
+
+<!-- Templates -->
+<script id="template" type="text/template">
+<% for (var i in users) {
+var user = users[i];
+%>
+<div id="user-<%=user._id%>" class="slide ">
+<meta name="user_id" content="<%=user._id%>">
+<a href="<%=user.url%>">
+<img src="<%=user.image || 'https://fightforthefuture.github.io/reset-the-net-form/images/happycat.jpg'%>">
+</a>
+<p>
+<strong><%=user.name%></strong> <span><%=user.description%></span>
+</p>
+</div>
+
+<% } %>
+</script>
+
+</body>
+</html>
