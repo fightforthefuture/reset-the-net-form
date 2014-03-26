@@ -24,12 +24,18 @@ body {
     margin-right: 24px;
 }
 
+.slide a {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
 .slide img {
     border-radius: 3px;
     box-shadow: 0 0 3px rgba(0,0,0,0.3);
     border: 1px solid rgba(0,0,0,0.3);
     cursor: pointer;
-    width: 200px;
+    max-width: 200px;
     height: 120px;
 }
 
