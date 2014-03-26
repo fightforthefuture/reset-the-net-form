@@ -13,6 +13,13 @@ $('form').on('submit', function(e) {
     }
 });
 
+// Update Form destination.
+if (location.host === 'localhost:8080') {
+    $('form').each(function() {
+        this.action = this.action.replace('https://reset-the-net-form-backend.herokuapp.com', 'http://localhost:8000');
+    });
+}
+
 // Show image preview.
 $('#image').on('change', showPreview);
 function showPreview() {
