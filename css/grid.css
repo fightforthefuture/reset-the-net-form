@@ -19,6 +19,7 @@ body {
 }
 
 .slide {
+    background-color: #f4f4f4;
     float: left;
     margin-bottom: 24px;
     margin-right: 24px;
