@@ -31,7 +31,7 @@ var user = users[i];
 %>
 <div id="user-<%=user._id%>" class="slide ">
 <meta name="user_id" content="<%=user._id%>">
-<a href="<%=user.url%>">
+<a target="_top" href="<%=user.url%>">
 <img src="<%=user.image || 'https://fightforthefuture.github.io/reset-the-net-form/images/happycat.jpg'%>">
 </a>
 <p>
