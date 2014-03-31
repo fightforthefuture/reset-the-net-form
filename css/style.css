@@ -233,6 +233,16 @@ section > fieldset > legend > h2 {
             box-sizing: border-box;
 }
 
+.upload {
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+.upload:hover {
+    opacity: 0.7;
+}
+
 @media screen and (max-width: 510px) {
     #preview {
         float: none;
@@ -246,14 +256,7 @@ section > fieldset > legend > h2 {
         margin: 0 auto;
         width: 222px;
     }
-}
-
-.upload{
-	transition: opacity .25s ease-in-out;
-	-moz-transition: opacity .25s ease-in-out;
-	-webkit-transition: opacity .25s ease-in-out;
-}
-
-.upload:hover{
-	opacity: 0.7;
+    .upload:hover {
+        opacity: 1;
+    }
 }
