@@ -11,38 +11,12 @@ h1 {
     font-size: 32px;
 }
 
-@media screen and (max-width: 979px) {
-    h1 {
-        font-size: 32px;
-        margin-top: 0;
-    }
-}
-
-@media screen and (max-width: 539px) {
-    h1 {
-        font-size: 22px;
-        margin-top: 12px;
-    }
-}
-
-@media screen and (max-width: 379px) {
-    h1 {
-        margin-top: 0;
-    }
-}
-
 h1, h2 {
     color: #175879;
     font-family: Montserrat,sans-serif;
     /*font-size: 40px;*/
     /*font-weight: 700;*/
     line-height: 1.4;
-    text-align: center;
-}
-
-textarea {
-    width: 100%;
-    overflow: hidden;
     text-align: center;
 }
 
@@ -81,13 +55,19 @@ form textarea {
 }
 
 form textarea {
-    background-color: #333;
-    color: #ddd;
+    background-color: #315172;
+    color: white;
     font-family: Montserrat, sans-serif;
     font-size: 18px;
     font-weight: 400;
     height: 140px;
     margin-bottom: 12px;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    border-radius: 14px;
 }
 
 form input:focus,
@@ -127,14 +107,6 @@ form h2{
 	margin-bottom: 40px;
 }
 
-form textarea{
-	background-color: #315172;
-	-webkit-border-radius: 14px;
-	-moz-border-radius: 14px;
-	border-radius: 14px;
-	color: #fff;
-}
-
 form{
 	margin-bottom: 140px;
 }
@@ -158,4 +130,33 @@ form input{
 	float: left;
 	margin: 0px;
 	margin-top: 30px;
+}
+
+
+
+@media screen and (max-width: 979px) {
+    h1 {
+        font-size: 32px;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 539px) {
+    h1 {
+        font-size: 22px;
+        margin-top: 12px;
+    }
+    form textarea {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 379px) {
+    h1 {
+        margin-top: 0;
+    }
+    form textarea {
+        font-size: 13px;
+        padding-top: 24px;
+    }
 }
