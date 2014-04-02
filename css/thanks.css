@@ -41,14 +41,9 @@ h1, h2 {
 }
 
 textarea {
-    height: 50px;
-    min-width: 520px;
+    width: 100%;
     overflow: hidden;
     text-align: center;
-}
-
-input {
-    min-width: 520px;
 }
 
 select {
@@ -70,7 +65,8 @@ form textarea {
     font-weight: bold;
     font-size: 12px;
     box-shadow: 0 2px 1px rgba(0,0,0,0.1) inset, 0 1px 0 #FFFFFF;
-    width: 222px;
+    max-width: 520px;
+    width: 100%;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
