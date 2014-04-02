@@ -1,0 +1,77 @@
+body {
+    background-color: white;
+    text-align: center;
+}
+
+h1 {
+    padding: 12px;
+    font-weight: 700;
+}
+
+h1, h2 {
+    color: #175879;
+    font-family: Montserrat,sans-serif;
+    /*font-size: 40px;*/
+    /*font-weight: 700;*/
+    line-height: 1.4;
+    text-align: center;
+}
+
+textarea {
+    height: 50px;
+    min-width: 520px;
+    overflow: hidden;
+    text-align: center;
+}
+
+input {
+    min-width: 520px;
+}
+
+select {
+    margin-bottom: 12px;
+}
+
+input[type=checkbox] {
+    width: 30px;
+    min-width: 1px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+form input,
+form textarea {
+    border: 1px solid #bebebe;
+    border-radius: 1px;
+    padding: 14px 16px 12px;
+    font-weight: bold;
+    font-size: 12px;
+    box-shadow: 0 2px 1px rgba(0,0,0,0.1) inset, 0 1px 0 #FFFFFF;
+    width: 222px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            transition: box-shadow .25s ease-in-out;
+            -moz-transition: box-shadow .25s ease-in-out;
+            -webkit-transition: box-shadow .25s ease-in-out;
+}
+
+.btn-info {
+    margin-bottom: 12px;
+}
+
+form textarea {
+    background-color: #333;
+    color: #ddd;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    height: 140px;
+    margin-bottom: 12px;
+}
+
+form input:focus,
+form textarea:focus {
+    border: 1px solid #56B4EF;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+}
