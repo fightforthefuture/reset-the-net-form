@@ -51,10 +51,11 @@ select {
 }
 
 input[type=checkbox] {
-    width: 30px;
-    min-width: 1px;
-    margin-top: 12px;
+    box-shadow: none;
     margin-bottom: 12px;
+    margin-top: 12px;
+    min-width: 1px;
+    width: 30px;
 }
 
 form input,
