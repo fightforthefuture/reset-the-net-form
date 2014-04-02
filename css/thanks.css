@@ -139,11 +139,12 @@ form{
 	margin-bottom: 140px;
 }
 
-.btn-success{
-	margin-top: 50px;
-	padding-top: 18px;
-	padding-bottom: 18px;
-	font-size: 18px;
+.btn-success {
+    box-shadow: none;
+    font-size: 18px;
+    margin-top: 50px;
+    padding-top: 18px;
+    padding-bottom: 18px;
 }
 
 form input{
