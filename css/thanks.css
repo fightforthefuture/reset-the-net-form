@@ -11,6 +11,26 @@ h1 {
     font-size: 32px;
 }
 
+@media screen and (max-width: 979px) {
+    h1 {
+        font-size: 32px;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 539px) {
+    h1 {
+        font-size: 22px;
+        margin-top: 12px;
+    }
+}
+
+@media screen and (max-width: 379px) {
+    h1 {
+        margin-top: 0;
+    }
+}
+
 h1, h2 {
     color: #175879;
     font-family: Montserrat,sans-serif;
