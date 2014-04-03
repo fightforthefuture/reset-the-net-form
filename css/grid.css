@@ -1,6 +1,7 @@
 body {
     padding-top: 8px;
     padding-top: 18px;
+    background-color: #f0f3f5;
 }
 
 .hidden {
@@ -27,6 +28,7 @@ body {
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     background-color: #f7f9fb;
+    background-color: #fff;
     -moz-box-shadow: 0 2px 2px rgba(60,84,103,.13);
     -webkit-box-shadow: 0 2px 2px rgba(60,84,103,.13);
     box-shadow: 0 2px 2px rgba(60,84,103,.13);
