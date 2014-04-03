@@ -3,7 +3,7 @@ body {
 
 }
 .arrow{
-	background-image: url('images/arrowgrid.jpg');
+	background-image: url('../images/arrowgrid.jpg');
 	background-position: top center;
 	height: 40px;
 	width: 100%;
