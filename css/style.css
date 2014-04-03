@@ -6,6 +6,7 @@ label.error {
 form > .container {
     margin: 0 auto;
     max-width: 510px;
+    margin-top: 35px;
 }
 
 form > .container > .fields {
@@ -118,8 +119,10 @@ form textarea:focus {
 
 #preview .card img {
     border-radius: 3px;
-    box-shadow: 0 0 3px rgba(0,0,0,0.3);
-    border: 1px solid rgba(0,0,0,0.3);
+	border: 2px solid #2e5a84; /* stroke */
+	-moz-box-shadow: inset 0 1px 0 #89adce; /* inner shadow */
+	-webkit-box-shadow: inset 0 1px 0 #89adce; /* inner shadow */
+	box-shadow: inset 0 1px 0 #89adce; /* inner shadow */
     cursor: pointer;
     max-width: 200px;
     height: 120px;
