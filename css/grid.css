@@ -1,6 +1,13 @@
 body {
-    padding-top: 18px;
     background-color: #f0f3f5;
+
+}
+.arrow{
+	background-image: url('images/arrowgrid.jpg');
+	background-position: top center;
+	height: 40px;
+	width: 100%;
+	float: left;
 }
 
 .hidden {
