@@ -103,5 +103,7 @@ function updateTextPreview() {
 updateTextPreview();
 $('#description, #name').on('change keyup', updateTextPreview);
 
+// Add JavaScript flag.
+$('form').append('<input type="hidden" name="js" value="enabled">');
 
 })(); // :)
