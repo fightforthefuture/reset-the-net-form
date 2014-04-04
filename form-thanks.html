@@ -15,7 +15,8 @@
 
 <section class="container">
 
-<form action="/" method="post">
+<form action="https://reset-the-net-form-backend.herokuapp.com/followup" method="post">
+<input type="hidden" name="code" id="code">
 <div class="headt">
 <h1><b>Thanks!</b> Now there are a few more things:</h1>
 </div>
@@ -25,7 +26,7 @@
 
 <br>
 
-<input name="tweet" placeholder="Link to tweet" type="url">
+<input required name="tweet" placeholder="Link to tweet" type="url">
 
 
 <br>
@@ -38,26 +39,26 @@
 
 <br>
 
-<input name="blog" placeholder="Link to blog post" type="url">
+<input required name="blog" placeholder="Link to blog post" type="url">
 <span class="devider"></span>
 <h2><img src="images/3.png" alt="" />  How many people will your action reach?</h2>
 
 Right now
 
-<select>
-    <option>Hundreds</option>
-    <option>Thousands</option>
-    <option>Millions</option>
+<select name="reachnow">
+<option value="hundreds">Hundreds</option>
+<option value="thousands">Thousands</option>
+<option value="millions">Millions</option>
 </select>
 
 <br>
 
 In 3 years
 
-<select>
-    <option>Hundreds</option>
-    <option>Thousands</option>
-    <option>Millions</option>
+<select name="reach3years">
+<option value="hundreds">Hundreds</option>
+<option value="thousands">Thousands</option>
+<option value="millions">Millions</option>
 </select>
 
 <br>
@@ -71,7 +72,7 @@ Making a donation supports Fight for the Future's work on this campaign. </br>Ba
 <br>
 
 <label>
-    <input type="checkbox" name="tell-me-more">
+    <input type="checkbox" name="interestinbacking">
     Yes, tell me more
 </label>
 
