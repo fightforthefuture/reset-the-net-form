@@ -82,7 +82,7 @@ showPreview.apply($('#image')[0]);
 
 function updateTextPreview() {
     var name = $('#name').val() || 'MyName';
-    var description = $('#description').val() || 'is doing something courageous and awesome with crypto.';
+    var description = $('#description').val() || 'will add SSL by the end of the year and promote secure tools on June 5.';
     $('#preview .card strong').text(name);
     $('#preview .card span').text(description);
 
